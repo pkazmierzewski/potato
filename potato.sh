@@ -52,8 +52,8 @@ while true
 do
 	for ((i=$WORK; i>0; i--))
 	do
-		printf "$time_left" $i "work"
-		sleep 1m
+          notify-send "${i}m of work left"
+          sleep 1m
 	done
 
 	! $MUTE && aplay /usr/share/sounds/speech-dispatcher/test.wav &>/dev/null
@@ -66,7 +66,7 @@ do
 
 	for ((i=$PAUSE; i>0; i--))
 	do
-		printf "$time_left" $i "pause"
+          notify-send "${i}m of break left"
 		sleep 1m
 	done
 	! $MUTE && aplay /usr/share/sounds/speech-dispatcher/test.wav &>/dev/null
