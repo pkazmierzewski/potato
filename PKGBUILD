@@ -9,7 +9,7 @@ license=('MIT')
 depends=('alsa-utils')
 source=('potato.sh'
         'LICENSE')
-md5sums=('a39b72e01fccb4a3225a14f3216d9619'
+md5sums=('6043a811d91b4c773f13182f9bf4a032'
          '1ddcbd2862764b43d75fb1e484bf8912')
 
 package() {
